@@ -1,0 +1,514 @@
+body {
+  overflow-x: hidden;
+  font-family: futura;
+}
+
+.containerHomePages {
+  width: 1440px;
+  height: 826px;
+  background: url('salle.png') no-repeat;
+  position: relative;
+}
+
+.rectangle {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 1440px;
+  height: 826px;
+}
+
+h1 {
+  font-family: futura;
+  font-weight: 500;
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  left: 0;
+  right: 0;
+  transform: translateY(330%);
+}
+
+.reserverr {
+  border: 3px white solid;
+  padding: 12px 24px 12px 24px;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  font-family: futura;
+  font-size: 20px;
+  color: white;
+  margin-top: 384px;
+  margin-left: 600px;
+}
+
+.scrollContainer {
+  width: 1px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  margin-top: 605px;
+  margin-left: 720px;
+}
+
+.scroll {
+  font-family: futura;
+  color: white;
+  font-size: 11px;
+  position: absolute;
+  display: flex;
+  margin-top: 670px;
+  margin-left: 699px;
+}
+
+.jap {
+  width: 1440px;
+  font-size: 600px;
+  opacity: 10%;
+  margin-top: 300px;
+  margin-left: 619px;
+  color: lightgrey;
+  margin-right: -600px;
+  position: absolute;
+}
+
+.parasecondpart {
+  font-size: 14px;
+  font-family: futura;
+  position: absolute;
+  margin-left: 205px;
+  margin-top: 720px;
+  font-weight: 100;
+}
+
+.knife {
+  position: absolute;
+  margin-left: 205px;
+  margin-top: 486px;
+  z-index: 1;
+}
+
+.yokubo {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: black;
+  font-size: 24px;
+  margin-top: 486px;
+  border-left: 3px darkred solid;
+  padding-left: 16px;
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+
+.zeroun {
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  margin-top: 625px;
+  margin-left: 52px;
+}
+
+.secondpart {
+  margin-top: -200px;
+}
+
+.menu {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: black;
+  font-size: 24px;
+  border-left: 3px darkred solid;
+  padding-left: 16px;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  margin-top: 1300px;
+}
+
+.zerodeux {
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  margin-left: 42px;
+  margin-top: 1430px;
+}
+
+.imgthirdpart {
+  margin-top: 1020px;
+  margin-left: -20px;
+  width: 105%;
+  height: 848px;
+}
+
+.parathirdpart {
+  margin-top: -720px;
+  font-size: 28px;
+  color: white;
+  margin-left: 300px;
+  font-weight: 100;
+}
+
+.decouvrir {
+  border: 2px black solid;
+  font-size: 25px;
+  text-align: center;
+  background: white;
+  margin-left: 300px;
+  padding: 20px 20px;
+  margin-top: 50px;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.reserver {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: black;
+  font-size: 24px;
+  border-left: 3px darkred solid;
+  padding-left: 16px;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  margin-top: 820px;
+}
+
+.zerotrois {
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  margin-left: 56px;
+  margin-top: 966px;
+}
+
+.table {
+  border: 2px black solid;
+  font-size: 25px;
+  text-align: center;
+  background: white;
+  padding: 20px 20px;
+  color: black;
+  margin-left: 566px;
+  margin-top: 560px;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.bitmap {
+  margin-left: 480px;
+  margin-top: 120px;
+  margin-bottom: 173px;
+}
+
+.egal {
+  position: absolute;
+  margin-top: 900px;
+  margin-left: 1350px;
+  border-bottom: 3px darkred solid;
+  font-size: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.firsttrait {
+  position: absolute;
+  font-size: 40px;
+  border-bottom: 3px darkred solid;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 1365px;
+  margin-left: 1360px;
+}
+
+.secondtrait {
+  position: absolute;
+  font-size: 40px;
+  margin-left: 1390px;
+  margin-top: 1405px;
+}
+
+.reserverdeux {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: black;
+  font-size: 24px;
+  border-left: 3px darkred solid;
+  padding-left: 16px;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  margin-top: 250px;
+}
+
+.zerotroisdeux {
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  margin-left: 56px;
+  margin-top: 392px;
+}
+
+.combien {
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  border-top: 1px solid white;
+  padding-top: 100px;
+}
+
+.un {
+  border-top: 2px lightgrey solid;
+  border-left: 2px lightgrey solid;
+  border-right: 2px lightgrey solid;
+  text-align: center;
+  padding: 5px 20px 5px 24px;
+  margin-left: 570px;
+  font-size: 40px;
+  margin-top: 127px;
+}
+
+.deux {
+  border-top: 2px lightgrey solid;
+  border-left: 2px lightgrey solid;
+  border-right: 2px lightgrey solid;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 40px;
+  margin-left: -6px;
+}
+
+.trois {
+  border-top: 2px lightgrey solid;
+  border-left: 2px lightgrey solid;
+  border-right: 2px lightgrey solid;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 40px;
+  margin-left: -6px;
+}
+
+.quatre {
+  border-top: 2px lightgrey solid;
+  border-left: 2px lightgrey solid;
+  border-right: 2px lightgrey solid;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 40px;
+  margin-left: -6px;
+}
+
+.cinq {
+  border: 2px lightgrey solid;
+  text-align: center;
+  padding: 5px 20px 5px 18px;
+  margin-left: 570px;
+  font-size: 40px;
+}
+
+.six {
+  border: 2px lightgrey solid;
+  text-align: center;
+  padding: 5px 20px 5px 19px;
+  font-size: 40px;
+  margin-left: -6px;
+}
+
+.sept {
+  border: 2px lightgrey solid;
+  text-align: center;
+  padding: 5px 20px 5px 22px;
+  font-size: 40px;
+  margin-left: -6px;
+}
+
+.huit {
+  border: 2px lightgrey solid;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+  font-size: 40px;
+  margin-left: -6px;
+}
+
+.phrase {
+  margin-top: 40px;
+  text-align: center;
+  padding-bottom: 248px;
+  color: grey;
+}
+
+.egaldeux {
+  position: absolute;
+  margin-top: -345px;
+  margin-left: 1350px;
+  border-bottom: 3px darkred solid;
+  font-size: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.reservertrois {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: black;
+  font-size: 24px;
+  border-left: 3px darkred solid;
+  padding-left: 16px;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  margin-top: 204px;
+}
+
+.zerotroistrois {
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  margin-left: 56px;
+  margin-top: 350px;
+}
+
+.choisir {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 180px;
+}
+
+.egaltrois {
+  position: absolute;
+  margin-left: 1350px;
+  margin-top: 178px;
+  border-bottom: 3px darkred solid;
+  font-size: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.horaire {
+  font-size: 20px;
+  margin-left: 521px;
+  margin-top: 200px;
+}
+
+.heure {
+  width: 200px;
+  margin-left: 110px;
+  margin-top: -17px;
+  margin-bottom: 200px;
+}
+
+.date {
+  width: 200px;
+  margin-left: 620px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.footer {
+  display: block;
+  height: 414px;
+  width: 100%;
+  background-color: #323232;
+  margin-top: 240px;
+}
+
+.pfooter {
+  text-align: center;
+  line-height: 26px;
+  color: white;
+}
+
+.pfooter1 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  line-height: 34px;
+  color: white;
+}
+
+.come {
+  position: absolute;
+  color: white;
+  margin-left: 102px;
+  padding-top: 77px;
+}
+
+.adresse {
+  padding-top: 120px;
+  position: absolute;
+  color: white;
+  margin-left: 102px;
+}
+
+.contact {
+  position: absolute;
+  color: white;
+  margin-left: 102px;
+  padding-top: 240px;
+}
+
+.tel {
+  padding-top: 300px;
+  position: absolute;
+  color: white;
+  margin-left: 102px;
+}
+
+.join {
+  position: absolute;
+  color: white;
+  margin-left: 1100px;
+  margin-top: -100px;
+}
+
+.instagram {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  margin-left: 598px;
+  margin-top: 80px;
+}
+
+.twitter {
+  position: absolute;
+  height: 30px;
+  width: 37px;
+  margin-left: 809px;
+  margin-top: 80px;
+}
+
+.facebook {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  margin-left: 704px;
+  margin-top: 80px;
+}
+
+.layout {
+  display: none;
+  background-color: grey;
+  opacity: 80%;
+  width: 100%;
+  height: 100%;
+}
+
+.nom {
+  font-size: 24px;
+  width: 20%;
+  margin-left: 520px;
+}
+
+.prenom {
+  font-size: 24px;
+  width: 20%;
+  margin-left: 520px;
+  margin-top: 20px;
+}
+
+.numtel {
+  font-size: 24px;
+  width: 20%;
+  margin-left: 520px;
+  margin-top: 20px;
+}
+
+.mail {
+  font-size: 24px;
+  width: 20%;
+  margin-left: 520px;
+  margin-top: 20px;
+}
