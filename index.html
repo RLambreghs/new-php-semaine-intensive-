@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="text" href="js/assets.js">
   <title>Yokubō</title>
 </head>
 
@@ -14,7 +13,7 @@
   <div class="containerHomePages">
     <div class="rectangle">
       <h1>YOKUBŌ</h1>
-      <a href="#combien" class="scrollLink"><p class="reserverr">Réservez une table</p></a>
+      <a href="#choisir" class="scrollLink"><p class="reserverr">Réservez une table</p></a>
       <div class="scrollContainer">
       </div>
       <p class="scroll">SCROLL</p>
@@ -37,41 +36,26 @@
   <p class="zerodeux">02</p>
   <p class="firsttrait">-</p>
   <p class="secondtrait">-</p>
-  <img class="imgthirdpart" src="img/gastro-sushi-theme-02.png" alt="">
+  <img class="imgthirdpart" id="imgthirdpart" src="img/gastro-sushi-theme-02.png" alt="">
   <p class="parathirdpart">Des produits de saisons et de qualité, assaisonnés</br>d’une grosse dose de savoir faire et d’une petite</br>touche de folie</p>
-  <a href="discover.html"><button type="button" class="decouvrir">Découvrer notre Menu</button></a>
+  <a href="#imgthirdpart"><button type="button" class="decouvrir" id="decouvrir">Découvrer notre Menu</button></a>
 </div>
 <div class="fourthpart">
   <p class="reserver">Réserver</p>
   <p class="zerotrois">03</p>
   <p class="egal">=</p>
-  <button type="button" class="table">Réserver une table</button>
+  <a href="#choisir" class="scrollLink"><button type="button" class="table">Réserver une table</button></a>
   <img src="img/Bitmap.png" alt="" class="bitmap">
-</div>
-<div class="cinqpart">
-  <p class="reserverdeux">Réserver</p>
-  <p class="zerotroisdeux">03</p>
-  <p class="combien" id="combien">Combien de convives serez-vous ?</p>
-  <button type="button" class="un">1</button>
-  <button type="button" class="deux">2</button>
-  <button type="button" class="trois">3</button>
-  <button type="button" class="quatre">4</button>
-  <button type="button" class="cinq">5</button>
-  <button type="button" class="six">6</button>
-  <button type="button" class="sept">7</button>
-  <button type="button" class="huit">8</button>
-  <p class="phrase">Pour plus de 8 personnes, veuillez nous contacter par téléphone</p>
-  <p class="egaldeux">=</p>
 </div>
 <div class="sixpart">
   <p class="reservertrois">Réserver</p>
   <p class="zerotroistrois">03</p>
-  <p class="choisir">Choisissez la date</p>
+  <p class="choisir" id="choisir">Choisissez la date</p>
   <input type="date" class="date"/>
   <p class="egaltrois">=</p>
   <form method="post" action="traitement.php">
    <p class="horaire">
-       <label for="heure">Un horaire:</label><br />
+       <label for="heure" class="unhoraire">Un horaire:</label><br />
        <select name="heure" id="heure" class="heure">
            <option value="choisirhoraire">Choisir un horaire</option>
            <option value="11h30">11h30</option>
@@ -102,12 +86,31 @@
        </select>
    </p>
 </form>
-<button type="submit" class="envoyer"></button>
-<div class="layout">
-<input type="text" class="nom" placeholder="Nom"></input>
-<input type="text" class="prenom" placeholder="Prénom"></input>
-<input type="tel" class="numtel" placeholder="06 10 20 30 40"></input>
-<input type="text" class="mail" placeholder="exemple@hotmail.com"></input>
+<a href="#combien"><button type="submit" class="envoyer" id="envoyer">Valider</button></a>
+</div>
+<div class="cinqpart">
+  <p class="reserverdeux">Réserver</p>
+  <p class="zerotroisdeux">03</p>
+  <p class="combien" id="combien">Combien de convives serez-vous ?</p>
+  <a href="#layout"><button type="button" class="un" id="un">1</button></a>
+  <a href="#layout"><button type="button" class="deux" id="deux">2</button></a>
+  <a href="#layout"><button type="button" class="trois" id="trois">3</button></a>
+  <a href="#layout"><button type="button" class="quatre" id="quatre">4</button></a>
+  <a href="#layout"><button type="button" class="cinq" id="cinq">5</button></a>
+  <a href="#layout"><button type="button" class="six" id="six">6</button></a>
+  <a href="#layout"><button type="button" class="sept" id="sept">7</button></a>
+  <a href="#layout"><button type="button" class="huit" id="huit">8</button></a>
+  <p class="phrase">Pour plus de 8 personnes, veuillez nous contacter par téléphone</p>
+  <p class="egaldeux">=</p>
+</div>
+<div class="backgroundformulaire">
+<div class="layout" id="layout">
+<li><input type="text" class="nom" placeholder="Nom"></input></li>
+<li><input type="text" class="prenom" placeholder="Prénom"></input></li>
+<li><input type="tel" class="numtel" placeholder="06 10 20 30 40"></input></li>
+<li><input type="email" class="mail" placeholder="exemple@hotmail.com"></input></li>
+<li><button type="submit" class="valider">Valider</button>
+</div>
 </div>
 </div>
 <div class="footer">
@@ -122,10 +125,112 @@
   <p class="pfooter">JEUDI 11:30 - 22:30</p>
   <p class="pfooter">VENDREDI: 11:30 - 22:30</p>
   <p class="pfooter">SAMEDI: 11:30 - 22:30</p>
-  <a href="#"><img src="img/instagram.svg" alt"" class="instagram"/></a>
-  <a href="#"><img src="img/facebook.svg" alt"" class="facebook"/></a>
-  <a href="#"><img src="img/twitter.svg" alt"" class="twitter"/></a>
+  <a href="#join"><img src="img/instagram.svg" alt"" class="instagram"/></a>
+  <a href="#join"><img src="img/facebook.svg" alt"" class="facebook"/></a>
+  <a href="#join"><img src="img/twitter.svg" alt"" class="twitter"/></a>
   <p class="pfooter">DIMANCHE: FERMÉ</p>
-  <p class="join">REJOIGNEZ L'ÉQUIPE</p>
+  <a href="#join"><p class="join" id="join">REJOIGNEZ L'ÉQUIPE</p></a>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$('a[href^="#"]').click(function(){
+	var the_id = $(this).attr("href");
+	if (the_id === '#') {
+		return;
+	}
+	$('html, body').animate({
+		scrollTop:$(the_id).offset().top
+	}, 'slow');
+	return false;
+});
+</script>
+<script>
+var suiteun = document.querySelector('.un');
+var suitedeux = document.querySelector('.deux');
+var suitetrois = document.querySelector('.trois');
+var suitequatre = document.querySelector('.quatre');
+var suitecinq = document.querySelector('.cinq');
+var suitesix = document.querySelector('.six');
+var suitesept = document.querySelector('.sept');
+var suitehuit = document.querySelector('.huit');
+var formulaire = document.querySelector('.layout');
+var visible = document.querySelector('.footer');
+
+suiteun.addEventListener('click', function() {
+  if (formulaire.style.display = 'none') {
+    formulaire.style.display = 'block';
+  }
+  if (visible.style.marginTop = '180px') {
+    visible.style.marginTop = '0px';
+  }
+});
+suitedeux.addEventListener('click', function() {
+  if (formulaire.style.display = 'none') {
+    formulaire.style.display = 'block';
+  if (visible.style.marginTop = '180px') {
+      visible.style.marginTop = '0px';
+  }
+  }
+});
+suitetrois.addEventListener('click', function() {
+  if (formulaire.style.display = 'none') {
+    formulaire.style.display = 'block';
+  }
+  if (visible.style.marginTop = '180px') {
+    visible.style.marginTop = '0px';
+  }
+});
+suitequatre.addEventListener('click', function() {
+  if (formulaire.style.display = 'none') {
+    formulaire.style.display = 'block';
+  }
+  if (visible.style.marginTop = '180px') {
+    visible.style.marginTop = '0px';
+  }
+});
+suitecinq.addEventListener('click', function() {
+  if (formulaire.style.display = 'none') {
+    formulaire.style.display = 'block';
+  }
+  if (visible.style.marginTop = '180px') {
+    visible.style.marginTop = '0px';
+  }
+});
+suitesix.addEventListener('click', function() {
+  if (formulaire.style.display = 'none') {
+    formulaire.style.display = 'block';
+  }
+  if (visible.style.marginTop = '180px') {
+    visible.style.marginTop = '0px';
+  }
+});
+suitesept.addEventListener('click', function() {
+  if (formulaire.style.display = 'none') {
+    formulaire.style.display = 'block';
+  }
+  if (visible.style.marginTop = '180px') {
+    visible.style.marginTop = '0px';
+  }
+});
+suitehuit.addEventListener('click', function() {
+  if (formulaire.style.display = 'none') {
+    formulaire.style.display = 'block';
+  }
+  if (visible.style.marginTop = '180px') {
+    visible.style.marginTop = '0px';
+  }
+});
+</script>
+<script>
+var envoyer = document.querySelector('.envoyer');
+var partcinq = document.querySelector('.cinqpart');
+
+envoyer.addEventListener('click', function() {
+  if (partcinq.style.display = 'none') {
+    partcinq.style.display = 'block';
+    partcinq.style.position = 'relative';
+  }
+});
+</script>
+</body>
 </html>
